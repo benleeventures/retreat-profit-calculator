@@ -1,4 +1,6 @@
-```
-
-After you run that, paste the entire component from the artifact above, then on a new line type exactly:
-```
+python3 -c "
+import urllib.request
+import os
+url = 'https://raw.githubusercontent.com/vitejs/vite/main/packages/create-vite/template-react/src/App.jsx'
+print('ready')
+"
