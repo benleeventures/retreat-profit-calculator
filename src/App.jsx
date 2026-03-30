@@ -67,27 +67,27 @@ export default function App(){
   const D=<div style={{width:32,height:1,background:C.border,margin:"28px 0"}}/>;
 
   return <div ref={top} style={{background:C.cream,minHeight:"100vh",fontFamily:SS}}>
-    <div style={{background:C.cream,borderBottom:`1px solid ${C.border}`,padding:"16px 24px",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-      <div style={{display:"flex",alignItems:"center",gap:10}}><Logo/><span style={{fontSize:14,color:C.dark,fontFamily:SF,letterSpacing:0.3}}>re:center</span></div>
-      <span style={{fontSize:10,color:C.muted,letterSpacing:2.5,textTransform:"uppercase"}}>Free Tool</span>
+    <div style={{background:C.cream,borderBottom:`1px solid ${C.border}`,padding:"16px 28px"}}>
+      <span style={{fontSize:13,color:C.muted,fontFamily:SF,letterSpacing:1,fontStyle:"italic"}}>re:center · Retreat Profit Calculator</span>
     </div>
 
     {step===0&&<div>
       <div style={{background:C.dark,padding:"72px 24px 64px",textAlign:"center"}}>
-        <p style={{fontSize:10,color:C.muted,letterSpacing:3,textTransform:"uppercase",margin:"0 0 24px"}}>For retreat leaders</p>
-        <h1 style={{fontSize:"clamp(28px,5vw,48px)",fontWeight:400,color:C.cream,margin:"0 auto 20px",maxWidth:560,lineHeight:1.15,fontFamily:SF}}>Sold out doesn't mean profitable.</h1>
-        <p style={{fontSize:16,color:C.muted,maxWidth:420,margin:"0 auto 16px",lineHeight:1.75}}>Most retreat leaders price from the heart. The market prices from math. This tool shows you where those two things collide.</p>
-        <p style={{fontSize:12,color:"#5A5048",margin:"0 0 48px",letterSpacing:0.5}}>Two minutes. Real numbers.</p>
-        <button onClick={()=>setStep(1)} style={{padding:"14px 36px",fontSize:13,letterSpacing:1.5,textTransform:"uppercase",background:C.cream,color:C.dark,border:"none",borderRadius:2,cursor:"pointer",fontFamily:SS,fontWeight:500}}>Calculate my numbers</button>
+        <p style={{fontSize:10,color:"#6A5E54",letterSpacing:3,textTransform:"uppercase",margin:"0 0 24px"}}>For retreat leaders, hosts & community gatherers</p>
+        <h1 style={{fontSize:"clamp(30px,5vw,50px)",fontWeight:400,color:"#F5F0EA",margin:"0 auto 20px",maxWidth:580,lineHeight:1.12,fontFamily:SF}}>Do you actually know if your retreat is profitable?</h1>
+        <p style={{fontSize:17,color:"#9A8E84",maxWidth:440,margin:"0 auto 16px",lineHeight:1.8}}>Most retreat leaders price from the heart. The market prices from math. This tool shows you exactly where those two things collide — in under two minutes.</p>
+        <p style={{fontSize:12,color:"#6A5E54",margin:"0 0 48px",letterSpacing:0.5}}>Free. No signup required.</p>
+        <button onClick={()=>setStep(1)} style={{padding:"15px 40px",fontSize:13,letterSpacing:1.5,textTransform:"uppercase",background:"#F5F0EA",color:C.dark,border:"none",borderRadius:2,cursor:"pointer",fontFamily:SS,fontWeight:500}}>Calculate my numbers</button>
       </div>
       <div style={{background:C.linen,borderBottom:`1px solid ${C.border}`,padding:"28px 24px",display:"flex",justifyContent:"center",gap:"48px",flexWrap:"wrap"}}>
-        {[["70%","quit within 3 years"],["$8,400","avg revenue left uncaptured"],["$23/hr","what most hosts actually earn"]].map(([s,l])=><div key={s} style={{textAlign:"center"}}><p style={{fontSize:22,color:C.dark,fontFamily:SF,margin:"0 0 4px"}}>{s}</p><p style={{fontSize:11,color:C.muted,margin:0,fontFamily:SS,maxWidth:120}}>{l}</p></div>)}
+        {[["70%","of retreat hosts quit within 3 years","burnout + bad margins"],["$8,400","average revenue left on the table","per retreat"],["$23/hr","what most hosts actually take home","after real costs"]].map(([s,l,sub])=><div key={s} style={{textAlign:"center"}}><p style={{fontSize:26,color:C.dark,fontFamily:SF,margin:"0 0 5px"}}>{s}</p><p style={{fontSize:12,color:C.mid,margin:"0 0 3px",fontFamily:SS}}>{l}</p><p style={{fontSize:11,color:C.muted,margin:0,fontFamily:SS,fontStyle:"italic"}}>{sub}</p></div>)}
       </div>
       <div style={{maxWidth:520,margin:"0 auto",padding:"52px 24px"}}>
-        <p style={{fontSize:17,color:C.dark,lineHeight:1.75,marginBottom:16,fontFamily:SF,fontStyle:"italic"}}>You're good at holding space. You're good at curating experiences that change people.</p>
-        <p style={{fontSize:15,color:C.mid,lineHeight:1.8}}>The business side — the margins, the hidden costs, the real hourly rate — that part is harder to look at. Fill in your numbers below. No fluff. Just clarity.</p>
+        <p style={{fontSize:18,color:C.dark,lineHeight:1.75,marginBottom:16,fontFamily:SF,fontStyle:"italic"}}>You're good at holding space. You're good at creating experiences that genuinely transform people.</p>
+        <p style={{fontSize:15,color:C.mid,lineHeight:1.85,marginBottom:14}}>But then there's the other side — the marketing, the strategy, the finance. The margins, the hidden costs, what your real hourly rate is at the end of the day.</p>
+        <p style={{fontSize:15,color:C.mid,lineHeight:1.85}}>Most retreat hosts don't even know if they're running a profitable business. This tool changes that.</p>
         {D}
-        <p style={{fontSize:11,color:C.muted,fontFamily:SS,fontStyle:"italic",textAlign:"center"}}>This tool is brought to you by <a href="https://recenterlife.com" style={{color:C.sageDark,textDecoration:"none"}}>re:center</a> — a nervous system regulation lodge in Santa Teresa, Costa Rica.</p>
+        <p style={{fontSize:13,color:C.mid,lineHeight:1.8,fontFamily:SS}}>This tool is brought to you by <a href="https://recenterlife.com" style={{color:C.sageDark,textDecoration:"none",fontWeight:500}}>re:center</a> — a nervous system regulation lodge in Santa Teresa, Costa Rica that helps retreat leaders like you not only sell out, but run profitable businesses they can be proud of.</p>
       </div>
     </div>}
 
