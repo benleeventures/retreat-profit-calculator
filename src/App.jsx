@@ -155,7 +155,7 @@ export default function App(){
       <Card style={{textAlign:"center",background:"linear-gradient(145deg,#FDF5F2,#F8EDE6)"}}>
         <h2 style={{fontSize:22,fontWeight:400,color:C.dark,fontFamily:SF,margin:"0 0 10px",lineHeight:1.3}}>Learn how to sell out your retreat — and actually get paid for it.</h2>
         <p style={{fontSize:14,color:C.mid,lineHeight:1.7,maxWidth:380,margin:"0 auto 24px"}}>Book a free 30-minute call with Ben. No pitch. No upsell. Just the honest conversation most people never have.</p>
-        <a href="#CALENDLY_LINK" style={{display:"inline-block",padding:"15px 32px",background:`linear-gradient(135deg,${C.terra},#E07050)`,color:C.white,borderRadius:10,textDecoration:"none",fontSize:15,fontWeight:600,fontFamily:SS,boxShadow:"0 4px 20px rgba(200,90,58,0.25)"}}>Book your free call with Ben</a>
+        <a href="https://calendly.com/YOUR_LINK_HERE" style={{display:"inline-block",padding:"15px 32px",background:`linear-gradient(135deg,${C.terra},#E07050)`,color:C.white,borderRadius:10,textDecoration:"none",fontSize:15,fontWeight:600,fontFamily:SS,boxShadow:"0 4px 20px rgba(200,90,58,0.25)"}}>Book your free call with Ben</a>
         <p style={{fontSize:12,color:C.gray,marginTop:12}}>30 minutes. Honest. Free.</p>
       </Card>
       <p style={{fontSize:12,color:C.gray,textAlign:"center",lineHeight:1.8}}>Brought to you by <a href="https://recenterlife.com" style={{color:C.sage,textDecoration:"none",fontWeight:600}}>re:center</a> — a nervous system regulation lodge in Santa Teresa, Costa Rica.</p>
