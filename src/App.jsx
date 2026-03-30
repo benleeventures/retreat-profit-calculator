@@ -161,7 +161,7 @@ export default function App(){
         <p style={{fontSize:10,color:C.muted,letterSpacing:2.5,textTransform:"uppercase",margin:"0 0 16px"}}>Free 30-minute call</p>
         <h2 style={{fontSize:24,fontWeight:400,color:C.dark,fontFamily:SF,margin:"0 0 12px",lineHeight:1.3}}>Learn how to sell out your retreat — and actually get paid for it.</h2>
         <p style={{fontSize:14,color:C.mid,lineHeight:1.75,maxWidth:380,margin:"0 auto 28px",fontFamily:SS}}>Book a free call with Ben. He's worked with retreat leaders across four continents on exactly this gap. No pitch. Just the honest conversation most people never have.</p>
-        <a href="#CALENDLY_LINK" style={{display:"inline-block",padding:"15px 36px",background:C.dark,color:C.cream,borderRadius:2,textDecoration:"none",fontSize:12,fontWeight:500,fontFamily:SS,letterSpacing:2,textTransform:"uppercase"}}>Book your free call with Ben</a>
+        <a href="https://calendly.com/yobenlee/re-setos-discovery-call" style={{display:"inline-block",padding:"15px 36px",background:C.dark,color:C.cream,borderRadius:2,textDecoration:"none",fontSize:12,fontWeight:500,fontFamily:SS,letterSpacing:2,textTransform:"uppercase"}}>Book your free call with Ben</a>
         <p style={{fontSize:11,color:C.muted,marginTop:14,fontFamily:SS}}>30 minutes. Honest. Free.</p>
       </div>
       <p style={{fontSize:11,color:C.muted,textAlign:"center",margin:"28px 0 0",lineHeight:1.8,fontFamily:SS}}>Brought to you by <a href="https://recenterlife.com" style={{color:C.sageDark,textDecoration:"none"}}>re:center</a> — a nervous system regulation lodge in Santa Teresa, Costa Rica.</p>
