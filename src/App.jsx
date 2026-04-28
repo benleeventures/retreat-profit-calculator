@@ -107,10 +107,10 @@ export default function App(){
       </>}
       {step===2&&<><p style={{fontSize:10,color:C.muted,letterSpacing:2.5,textTransform:"uppercase",margin:"0 0 8px"}}>Step 2 of 3</p>
         <h2 style={{fontSize:26,fontWeight:400,color:C.dark,margin:"0 0 6px",fontFamily:SF}}>The real numbers</h2>
-        <p style={{fontSize:13,color:C.muted,margin:"0 0 36px",lineHeight:1.6}}>This is where most retreat leaders discover the gap.</p>
-        <Slider label="Venue & accommodation" value={venue} min={10} max={65} onChange={setVenue} suffix="%" hint="Industry average: 30–45%"/>
-        <Slider label="Food & beverage" value={food} min={5} max={40} onChange={setFood} suffix="%" hint="Industry average: 15–25%"/>
-        <Slider label="Travel & logistics" value={travel} min={0} max={25} onChange={setTravel} suffix="%"/>
+        <p style={{fontSize:13,color:C.muted,margin:"0 0 36px",lineHeight:1.6}}>You're working with <strong style={{color:C.dark}}>{fmt(rev)}</strong> in total revenue. Drag each slider to match your actual costs.</p>
+        <Slider label="Venue & accommodation" value={venue} min={10} max={65} onChange={setVenue} suffix="%" hint={`Lodge/property rental · Industry avg 30–45% · = ${fmt(vCost)}`}/>
+        <Slider label="Food & beverage" value={food} min={5} max={40} onChange={setFood} suffix="%" hint={`Meals, snacks, coffee for all guests · Industry avg 15–25% · = ${fmt(fCost)}`}/>
+        <Slider label="Travel & logistics" value={travel} min={0} max={25} onChange={setTravel} suffix="%" hint={`Flights, transfers, incidentals · = ${fmt(tCost)}`}/>
         <div style={{margin:"8px 0 24px"}}>
           <Toggle label="Include marketing costs" sub={`${mktPct}% of revenue`} checked={mkt} onChange={setMkt}/>
           {mkt&&<div style={{paddingTop:8}}><Slider label="Marketing %" value={mktPct} min={3} max={35} onChange={setMktPct} suffix="%"/></div>}
